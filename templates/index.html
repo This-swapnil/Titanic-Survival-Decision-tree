@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Titanic Survival Prediction</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<div class="bg-contact2">
+		<div class="container-contact2">
+			<div class="wrap-contact2">
+				<form class="contact2-form validate-form" action="/predict" method="POST">
+					<span class="contact2-form-title">
+						Titanic Survival Prediction
+					</span>
+
+					<div class="wrap-input2 validate-input" data-validate="Passenger class is required">
+						<input class="input2" type="text" name="pass">
+						<span class="focus-input2" data-placeholder="Passenger class (value should be 1, 2, 3)"></span>
+					</div>
+
+					<div class="wrap-input2 validate-input" data-validate = "Sex is required">
+						<input class="input2" type="text" name="sex">
+						<span class="focus-input2" data-placeholder="Sex (Male or Female)"></span>
+					</div>
+
+					<div class="wrap-input2 validate-input" data-validate = "Age is required">
+						<input class="input2" type="text" name="Age">
+						<span class="focus-input2" data-placeholder="Age"></span>
+					</div>
+
+					<div class="wrap-input2 validate-input" data-validate = "Sibling or Spouse is required">
+						<input class="input2" type="text" name="sib">
+						<span class="focus-input2" data-placeholder="Sibling or Spouse"></span>
+					</div>
+
+					<div class="wrap-input2 validate-input" data-validate = "Parent children info is required">
+						<input class="input2" type="text" name="parch">
+						<span class="focus-input2" data-placeholder="Parch (Parents/children aboard)"></span>
+					</div>
+
+					<div class="wrap-input2 validate-input" data-validate = "Fare is required">
+						<input class="input2" type="text" name="fare">
+						<span class="focus-input2" data-placeholder="Fare"></span>
+					</div>
+
+					<div class="container-contact2-form-btn">
+						<div class="wrap-contact2-form-btn">
+							<div class="contact2-form-bgbtn"></div>
+							<button class="contact2-form-btn">
+								Submit Your Response
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!--===============================================================================================-->
+	<script src="static/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="static/vendor/bootstrap/js/popper.js"></script>
+	<script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="static/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="static/js/main.js"></script>
+
+</body>
+</html>
