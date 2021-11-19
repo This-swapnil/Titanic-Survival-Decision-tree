@@ -43,7 +43,5 @@ def predict():
             error = {'error': e}
             return render_template('404.html', error=error)
         
-
-
 if __name__ == "__main__":
     app.run(debug=True)
